@@ -1,0 +1,44 @@
+body {
+    height: 100vh; 
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#board {
+    border: 3px solid grey;
+}
+
+.row {
+    display: flex;
+    border: 1px solid white;
+    padding: 8px;
+}
+
+.row span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    width: 64px;
+    height: 64px;
+    margin: 2px;
+    font: 3em sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 1s;
+}
+
+.row span.confirmed {
+    background: greenyellow
+}
+
+.row span.declined {
+    background: lightcoral;
+}
+
+.row span.exist {
+    background: #6fb4ec;
+}
