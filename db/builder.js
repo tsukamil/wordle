@@ -2,7 +2,7 @@ let db = "";
 
 function readFile(input) {
   let file = input.files[0];
-  console.log(file)
+  console.log(file);
 
   let reader = new FileReader();
 
